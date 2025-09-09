@@ -1,0 +1,142 @@
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width:100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width:100%;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1180px;
+    }
+}
+
+
+
+
+@media (max-width: 991.98px) {
+  .overlay-heading {
+    top: 20%;
+    left:8%;
+    transform: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .overlay-heading {
+    font-size: 14px;    
+    padding: 6px 12px;     
+    top: 15%;               
+    left: 5%;               
+  }
+}
+
+/* ===== MOBILE FIX (md, sm, xs) ===== */
+@media (max-width: 991.98px) {
+  /* Hide background image */
+  .items .col-lg-3 img {
+    display: none;
+  }
+
+  /* Show heading and button in full width */
+  .items .col-lg-3 .overlay-heading {
+    position: relative;
+    margin: 0;
+    padding: 1rem 0;
+    background: none;
+    color: #212529;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
+
+  /* Full width layout */
+  .items .row {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .items .col-lg-3,
+  .items .col-lg-9 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Hide desktop grid */
+  .items .col-lg-9 .row {
+    display: none !important;
+  }
+
+  /* Show mobile scrollable cards */
+  .items .mobile-cards-wrapper {
+    display: block !important;
+    margin-top: 1rem;
+  }
+
+  /* Button style */
+  .items .overlay-heading button {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Scrollable cards container */
+.mobile-cards-wrapper {
+  display: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-cards-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Card style for mobile */
+.mobile-card {
+  display: inline-block;
+  width: calc(33.33% - 10px);
+  min-width: 100px;
+  margin: 0 5px;
+  vertical-align: top;
+}
+
+.mobile-card .card {
+  border: none;
+  background: transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-card img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto 0.5rem;
+}
